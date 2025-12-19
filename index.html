@@ -71,6 +71,35 @@
       border-left: 4px solid #0057A3;
       margin-top: 16px;
     }
+    /* === Header con logos === */
+.logos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-izq,
+.logo-der {
+  max-height: 48px;
+}
+
+/* === Banner institucional === */
+.banner {
+  background-color: #0057A3;
+  color: #ffffff;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.banner-titulo {
+  font-size: 20px;
+  margin: 0 0 8px 0;
+}
+
+.banner-texto {
+  font-size: 16px;
+  margin: 0;
+}
   </style>
 </head>
 
@@ -79,14 +108,28 @@
   <div class="container">
 
     <div class="header">
-      <h1>Cuenta DNI Comercios 2.0</h1>
-      <p>CARTA (EN PROCESO DE MODIFICACIÓN) – VERSIÓN ACTUALIZADA</p>
-    </div>
 
-    <p>
-      Ya sos parte de la comunidad <strong>Cuenta DNI Comercios</strong>.<br>
-      Ahora podés cobrar de forma simple y segura con múltiples medios de pago, desde una sola app.
-    </p>
+  <div class="logos">
+    <img src="assets/logo-banco.png"
+         alt="Banco Provincia"
+         class="logo-izq">
+
+    <img src="assets/logo-cdnic.png"
+         alt="Cuenta DNI Comercios"
+         class="logo-der">
+  </div>
+
+</div>
+
+<div class="banner">
+  <p class="banner-titulo">
+    Ya sos parte de la comunidad <strong>Cuenta DNI Comercios</strong>.
+  </p>
+  <p class="banner-texto">
+    Ahora podés cobrar de forma simple y segura con múltiples medios de pago, desde una sola app.
+  </p>
+</div>
+
 
     <div class="divider"></div>
 
@@ -143,4 +186,5 @@
 
 </body>
 </html>
+
 
