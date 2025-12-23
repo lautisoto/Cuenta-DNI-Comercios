@@ -44,12 +44,16 @@
     }
 
     ul {
-      padding-left: 20px;
-    }
+  padding-left: 20px;
+}
 
-    li {
-      margin-bottom: 8px;
-    }
+li {
+  margin-bottom: 8px;
+}
+
+li::marker {
+  color: #3FAE2A;
+}
 
     .divider {
       border-top: 1px solid #e0e0e0;
@@ -115,6 +119,27 @@
   font-style: italic;
 }
     
+   .titulo-negro {
+  color: #333;
+}
+    
+.destacado-verde {
+  color: #3FAE2A;
+  font-weight: bold;
+}
+    
+ .bloque-qr {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 16px;
+}
+
+.bloque-qr img {
+  width: 140px;
+  height: auto;
+}
+   
   </style>
 </head>
 
@@ -150,17 +175,13 @@
   </p>
 </div>
 
+    <h2 class="titulo-negro">Empezá a cobrar con tu Celu</h2>
+  <ul>
+  <li><span class="destacado-verde">Generá tu QR</span> desde la app, o imprimilo y exhibilo en tu comercio.</li>
+  <li><span class="destacado-verde">Cobrá a distancia con Link de pago:</span> compartilo por WhatsApp, correo electrónico o redes sociales.</li>
+  <li><span class="destacado-verde">¡Nuevo! Tap to Phone:</span> convertí tu celular en una terminal de cobro y aceptá tarjetas sin contacto, sin equipos extra.</li>
+</ul>
 
-    <div class="divider"></div>
-
-    <h2>Empezá a cobrar con tu Celu</h2>
-   <ul>
-     <li>Generá tu QR desde la app, o imprimilo y exhibilo en tu comercio.</li>
-     <li>Cobrá a distancia con Link de pago: compartilo por WhatsApp, correo electrónico o redes sociales.</li>
-     <li><strong>¡Nuevo!</strong> Tap to Phone: convertí tu celular en una terminal de cobro y aceptá tarjetas sin contacto, sin equipos extra.</li>
-   </ul>
-
-    <div class="divider"></div>
 
 <h2>Beneficios</h2>
 
@@ -174,21 +195,24 @@
   <li>Sumá puntos en el programa MESUMO por cada venta.</li>
 </ul>
 
-
-
-    <div class="divider"></div>
-
 <h2>Seguí creciendo con Cuenta DNI Comercios</h2>
 
-<p><strong>¡Tenemos una Tarjeta Visa y Mastercard esperándote!</strong></p>
+<div class="bloque-qr">
+  <img src="assets/qr-paquete.png" alt="QR paquete de productos">
 
-<p>
-  Olvidáte del mantenimiento, mientras vendas con la app, lo bonificamos todos los meses.**
-</p>
+  <div>
+    <p><strong>¡Tenemos una Tarjeta Visa y Mastercard esperándote!</strong></p>
 
-<p>
-  Escaneá el QR y pedí tu paquete de productos con tus tarjetas incluídas.
-</p>
+    <p>
+      Olvidáte del mantenimiento, mientras vendas con la app,
+      <span class="destacado-verde">lo bonificamos todos los meses</span>.**
+    </p>
+
+    <p>
+      Escaneá el QR y pedí tu paquete de productos con tus tarjetas incluídas.
+    </p>
+  </div>
+</div>
 
     <div class="footer">
       <p>
@@ -204,6 +228,7 @@
 
 </body>
 </html>
+
 
 
 
